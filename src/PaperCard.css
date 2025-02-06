@@ -1,0 +1,78 @@
+/* PaperCard.css */
+.paper-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.4s ease-out;
+  }
+  
+  .app-container.dark .paper-card {
+    background: #333;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .paper-title {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .bookmark-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #0070f3;
+  }
+  
+  .paper-authors,
+  .paper-published {
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .app-container.dark .paper-authors,
+  .app-container.dark .paper-published {
+    color: #ccc;
+  }
+  
+  .paper-abstract {
+    flex: 1;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+  }
+  
+  .paper-link {
+    align-self: flex-end;
+    text-decoration: none;
+    color: #0070f3;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

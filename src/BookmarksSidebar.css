@@ -1,0 +1,68 @@
+/* BookmarksSidebar.css */
+.bookmarks-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    max-width: 80%;
+    height: 100vh;
+    background: #ffffff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 15;
+    transition: transform 0.3s ease;
+  }
+  
+  .app-container.dark .bookmarks-sidebar {
+    background: #333;
+    border-color: #555;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  .bookmark-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  .bookmark-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .app-container.dark .bookmark-item {
+    background: #444;
+  }
+  
+  .bookmark-item:hover {
+    background: #e0e0e0;
+  }
+  
+  .app-container.dark .bookmark-item:hover {
+    background: #555;
+  }
+  
+  .no-bookmarks {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
