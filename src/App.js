@@ -3,10 +3,11 @@ import PaperCard from './PaperCard';
 import Footer from './Footer';
 import BookmarksSidebar from './BookmarksSidebar';
 import { useSwipeable } from 'react-swipeable';
+import { Analytics } from "@vercel/analytics/react"
 import './App.css';
 
 const ARXIV_API_URL =
-  'http://export.arxiv.org/api/query?search_query=cat:cs.AI&max_results=100&sortBy=submittedDate&sortOrder=descending';
+  'https://export.arxiv.org/api/query?search_query=cat:cs.AI&max_results=100&sortBy=submittedDate&sortOrder=descending';
 
 function App() {
   const [papers, setPapers] = useState([]);
@@ -225,6 +226,7 @@ function App() {
         </>
       )}
       <Footer />
+      <Analytics />
     </div>
   );
 }
